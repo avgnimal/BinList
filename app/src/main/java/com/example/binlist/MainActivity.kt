@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.binlist.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+
     class MainActivity : AppCompatActivity() {
 
         private lateinit var binding: ActivityMainBinding
@@ -17,5 +17,3 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-
-}

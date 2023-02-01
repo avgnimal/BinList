@@ -22,6 +22,8 @@ class NavFragment : Fragment() {
 
         binding.history.setOnClickListener {
             findNavController().navigate(R.id.action_navFragment_to_navFragment2)
+
+            var numberInt = binding.number.text.toString().toInt()
         }
         return binding.root
     }
