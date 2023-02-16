@@ -5,13 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
 import com.example.binlist.databinding.FragmentNavBinding
+import viewModel.NavFragmentViewModel
 
 
 class NavFragment : Fragment() {
     private var _binding: FragmentNavBinding? = null
     private val binding get() = _binding!!
+
+    private lateinit var viewModel: NavFragmentViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -27,4 +31,9 @@ class NavFragment : Fragment() {
         }
         return binding.root
     }
+
+}
+
+class NavFragmenViewModel {
+
 }
